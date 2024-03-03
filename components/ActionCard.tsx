@@ -47,18 +47,43 @@ export default function ActionCard() {
 }
 
 const styles = StyleSheet.create({
-  headingText: {},
-  card: {},
-  elevatedCard: {},
-  headingContainer: {},
-  headerText: {},
+  headingText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
+  },
+  card: {
+    width: 350,
+    height: 340,
+    borderRadius: 10,
+    marginVertical: 12,
+    marginHorizontal: 16,
+  },
+  elevatedCard: {
+    backgroundColor: '#E07C24',
+    elevation: 4,
+    shadowOffset: {width: 5, height: 5},
+    shadowColor: '#333',
+    shadowOpacity: 0.5,
+  },
+  headingContainer: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
   cardImage: {
-    height: 180,
+    height: 190,
   },
   bodyContainer: {},
   footerContainer: {
-    flex: 1,
+    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     margin: 8,
     padding: 8,
     backgroundColor: '#CAD5E2',
